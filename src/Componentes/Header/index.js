@@ -5,10 +5,10 @@ import logo from '../../images/logo.jfif'
 export const Header = () => {
     return (
         <hedaer>
-
+            
             <a href='#'>
                 <div className='logo'>
-                    <img src={logo} alt='' width="150"></img>
+                    <img src={logo} alt='logo' width="150"></img>
                 </div>
             </a>
 
@@ -21,20 +21,10 @@ export const Header = () => {
                 </li>
             </ul>
 
-            <div className='cart'>
+            <div className="cart">
                 <box-icon name="cart"></box-icon>
                 <span className='item__total'>0</span>
             </div>
-
-
-
-
-
-
-
-
-
-
 
         </hedaer>
     )
