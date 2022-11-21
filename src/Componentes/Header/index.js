@@ -2,28 +2,29 @@ import React from 'react'
 import logo from '../../images/logo.jfif'
 
 
-export const Header =() => {
+export const Header = () => {
     return (
         <hedaer>
 
-             <a href='#'>
+            <a href='#'>
                 <div className='logo'>
-                    <img src={logo} alt=''></img>
+                    <img src={logo} alt='' width="150"></img>
                 </div>
-             </a>
+            </a>
 
             <ul>
                 <li>
-                    <a href='#'>INICIO</a> 
+                    <a href='#'>INICIO</a>
                 </li>
                 <li>
-                    <a href='#'>PRODUCTOS</a> 
+                    <a href='#'>PRODUCTOS</a>
                 </li>
             </ul>
-        <div className='cart'>
-            <box-icon name="cart"></box-icon>
-            <span className='item__total'>0</span>
-        </div>
+
+            <div className='cart'>
+                <box-icon name="cart"></box-icon>
+                <span className='item__total'>0</span>
+            </div>
 
 
 
@@ -34,7 +35,7 @@ export const Header =() => {
 
 
 
-                
+
         </hedaer>
     )
 }
