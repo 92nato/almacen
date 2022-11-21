@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../images/logo.jfif'
 
 
 export const Header = () => {
     return (
-        <hedaer>
+        <hedaer className='Header'>
             
             <a href='#'>
                 <div className='logo'>
@@ -12,12 +13,15 @@ export const Header = () => {
                 </div>
             </a>
 
+
             <ul>
                 <li>
-                    <a href='#'>INICIO</a>
+                    {/*<a href='/'>INICIO</a>*/}
+                    <Link to="/">INICIO</Link>
                 </li>
                 <li>
-                    <a href='#'>PRODUCTOS</a>
+                    <Link to="/Productos">PRODUCTOS</Link>
+                    {/*<a href='/Productos'>PRODUCTOS</a>*/}
                 </li>
             </ul>
 

@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { Route, Routes } from "react-router-dom";
+import { Inicio } from "./Inicio/Index";
+import { ProductosLista } from "./Productos";
 
-export const paginas = () => {
+
+export const Paginas = () => {
     return (
-        <div>
-           Paginas
-        </div>
+        <Routes>
+            <Route path='/' element={<Inicio/>}/>
+            <Route path='/productos' element={<ProductosLista/>}/>
+        </Routes>
+    
+
+
     )
 }

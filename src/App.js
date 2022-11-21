@@ -1,17 +1,19 @@
 import React from 'react'
 import { Header } from './Componentes/Header'
-import { ProductosLista } from './Componentes/Productos/index'
 import 'boxicons';
+import { Paginas } from "./Componentes/Paginas"
+
 
 function App() {
   return (
     <div className="App">
-      <header>
+      
+      
+      <Header />
+      
 
-        <Header />
-
-      </header>
-      <ProductosLista />
+      <Paginas />
+    
     </div>
   );
 }
